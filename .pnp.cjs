@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "@example/starter",
+        "name": "anna-hsu-music-website",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["@example/starter", ["workspace:."]]
+      ["anna-hsu-music-website", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -538,17 +538,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emmetio/scanner", "npm:1.0.0"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["@example/starter", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["@example/starter", "workspace:."],
-            ["astro", "npm:0.24.3"],
-            ["sass", "npm:1.49.9"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["@gar/promisify", [
@@ -1131,6 +1120,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["indent-string", "npm:4.0.0"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["anna-hsu-music-website", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["anna-hsu-music-website", "workspace:."],
+            ["astro", "npm:0.24.3"],
+            ["sass", "npm:1.49.9"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["ansi-regex", [

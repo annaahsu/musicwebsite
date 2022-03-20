@@ -1,0 +1,49 @@
+---
+// Style Imports
+import '../styles/global.css';
+// Component Imports
+import Head from '../components/head.astro';
+import AnnaHsu from '../components/annahsu.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+const title = 'Anna Hsu';
+const description = 'I\'m Anna Hsu (she/her), an pianist, flautist, and composer from Northern Virginia';
+const permalink = 'https://music.annahsu.dev';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+<head>
+	<Head {title} {description} {permalink} />
+
+	<style>
+		main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			max-width: 700px;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<AnnaHsu />
+		<p>Anna Hsu is a senior attending <a href="https://tjhsst.fcps.edu">Thomas Jefferson High School for Science and Technology</a>. She has studied piano for 13 years,
+		with the last eight years under <a href="https://soundsofnote.com">Robert Bond Kelley</a>. As a pianist, Anna has won the WMTA Raissa Tselentis Award of Excellence
+		and received honors for the NVMTA Sonata Festival. As a composer, she has placed second at the NVMTA Composition Competition and third at the WMTA Young Composers
+		Competition.</p>
+		<p>Regardless of her performance medium, Anna has shared music in her community with seniors across the DC Metro Area through the
+		<a href="https://tacyfoundation.org">Tacy Foundation</a>, a non-profit dedicated to sharing the healing power of music. You can also find Anna's performances on her
+		<a href="">YouTube channel</a> and <a href="https://instagram.com/annahsupiano">Instagram</a>.</p>
+		<p>In her (rare) spare time, you can find Anna writing websites, running in her neighborhood, and building mechanical keyboards. To find out more about Anna, visit her
+		<a href="https://annahsu.dev">main website</a> or reach out via <a href="mailto:music@annahsu.dev">email</a>.</p>
+	</main>
+</body>
+</html>

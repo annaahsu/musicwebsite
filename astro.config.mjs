@@ -1,11 +1,5 @@
-export default {
-  projectRoot: '.',
-  pages: './src/pages',
-  dist: './dist',
-  public: './public',
-  buildOptions: {
-    site: 'https://music.annahsu.dev',
-    sitemap: true,
-  },
-  renderers: [],
-};
+import { defineConfig } from "astro/config";
+
+export default defineConfig({
+  site: "https://music.annahsu.dev",
+});
